@@ -48,21 +48,49 @@ const Navbar: React.FC = () => {
             NOOR<span className="text-purple-500">.DEV</span>
           </Link>
 
-          <ul className="hidden items-center gap-6 text-sm font-medium uppercase tracking-[0.16em] text-zinc-300 sm:flex sm:gap-8">
-            {NAV_ITEMS.map((item, index) => (
-              <li key={`${item.href}-${item.label}-${index}`}>
-                <Link
-                  href={item.href}
-                  className="group relative rounded-[6px] px-3 py-1.5 transition-all duration-200 hover:text-white"
-                >
-                  <span className="relative z-10 transition-all duration-200 group-hover:tracking-[0.22em] group-hover:text-white">
-                    {item.label}
-                  </span>
-                  <span className="pointer-events-none absolute inset-0 z-0 rounded-[6px] border border-transparent shadow-[0_0_0_0_rgba(110,62,206,0)] transition-[box-shadow,border-color,background-color] duration-200 group-hover:border-[#6e3ece] group-hover:bg-[#6e3ece]/10 group-hover:shadow-[0_0_18px_rgba(110,62,206,0.55)]" />
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="hidden items-center gap-6 sm:flex sm:gap-8">
+            <ul className="flex items-center gap-6 text-sm font-medium uppercase tracking-[0.16em] text-zinc-300 sm:gap-8">
+              {NAV_ITEMS.map((item, index) => (
+                <li key={`${item.href}-${item.label}-${index}`}>
+                  <Link
+                    href={item.href}
+                    className="group relative rounded-[6px] px-3 py-1.5 transition-all duration-200 hover:text-white"
+                  >
+                    <span className="relative z-10 transition-all duration-200 group-hover:tracking-[0.22em] group-hover:text-white">
+                      {item.label}
+                    </span>
+                    <span className="pointer-events-none absolute inset-0 z-0 rounded-[6px] border border-transparent shadow-[0_0_0_0_rgba(110,62,206,0)] transition-[box-shadow,border-color,background-color] duration-200 group-hover:border-[#6e3ece] group-hover:bg-[#6e3ece]/10 group-hover:shadow-[0_0_18px_rgba(110,62,206,0.55)]" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="/assets/noorResume.pdf"
+              download="Noor_Alam_Resume.pdf"
+              className="group relative flex items-center gap-2 rounded-[6px] border border-[#6e3ece]/50 bg-[#6e3ece]/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.16em] text-white transition-all duration-200 hover:border-[#6e3ece] hover:bg-[#6e3ece]/20 hover:shadow-[0_0_18px_rgba(110,62,206,0.55)]"
+            >
+              <motion.svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                whileHover={{ y: -2 }}
+                transition={{ duration: 0.2 }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
+              </motion.svg>
+              <span className="relative z-10 font-['Press_Start_2P',system-ui,monospace] text-[8px]">
+                CV
+              </span>
+              <span className="pointer-events-none absolute inset-0 z-0 rounded-[6px] border border-transparent shadow-[0_0_0_0_rgba(110,62,206,0)] transition-shadow duration-200 group-hover:shadow-[0_0_12px_rgba(110,62,206,0.4)]" />
+            </a>
+          </div>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -160,18 +188,47 @@ const Navbar: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5, duration: 0.4 }}
-                  className="mt-8 rounded-[8px] border border-white/10 bg-black/40 p-4"
+                  className="mt-8 space-y-4"
                 >
-                  <p className="mb-2 text-[9px] uppercase tracking-[0.16em] text-zinc-500">
-                    QUICK LINKS
-                  </p>
-                  <div className="space-y-2">
-                    <a
-                      href="mailto:noor.alam.619@gmail.com"
-                      className="block text-[10px] text-zinc-300 transition-colors hover:text-[#6e3ece]"
+                  <a
+                    href="/assets/noorResume.pdf"
+                    download="Noor_Alam_Resume.pdf"
+                    onClick={handleLinkClick}
+                    className="group relative flex items-center justify-center gap-2 rounded-[8px] border border-[#6e3ece]/50 bg-[#6e3ece]/10 px-4 py-3 transition-all duration-200 hover:border-[#6e3ece] hover:bg-[#6e3ece]/20 hover:shadow-[0_0_18px_rgba(110,62,206,0.55)]"
+                  >
+                    <motion.svg
+                      className="h-5 w-5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      whileHover={{ y: -2, scale: 1.1 }}
+                      transition={{ duration: 0.2 }}
                     >
-                      noor.alam.619@gmail.com
-                    </a>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                      />
+                    </motion.svg>
+                    <span className="font-['Press_Start_2P',system-ui,monospace] text-[10px] uppercase tracking-[0.16em] text-white transition-all group-hover:text-[#6e3ece]">
+                      DOWNLOAD CV
+                    </span>
+                    <div className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-[#6e3ece] bg-[#6e3ece]/20 opacity-0 transition-opacity group-hover:opacity-100" />
+                  </a>
+
+                  <div className="rounded-[8px] border border-white/10 bg-black/40 p-4">
+                    <p className="mb-2 text-[9px] uppercase tracking-[0.16em] text-zinc-500">
+                      QUICK LINKS
+                    </p>
+                    <div className="space-y-2">
+                      <a
+                        href="mailto:noor.alam.619@gmail.com"
+                        className="block text-[10px] text-zinc-300 transition-colors hover:text-[#6e3ece]"
+                      >
+                        noor.alam.619@gmail.com
+                      </a>
+                    </div>
                   </div>
                 </motion.div>
               </div>

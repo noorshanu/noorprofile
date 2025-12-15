@@ -15,7 +15,7 @@ interface SocialLink {
 const SOCIAL_LINKS: SocialLink[] = [
   {
     name: "GitHub",
-    url: "https://github.com/noorcode",
+    url: "https://github.com/noorshanu",
     color: "#6e3ece",
     icon: (
       <svg
@@ -34,7 +34,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/noorcode",
+    url: "https://www.linkedin.com/in/noor-alam-aa722314b/",
     color: "#6e3ece",
     icon: (
       <svg
@@ -49,7 +49,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "Telegram",
-    url: "https://t.me/noorcode",
+    url: "https://t.me/noorxdee",
     color: "#6e3ece",
     icon: (
       <svg
@@ -64,7 +64,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "X (Twitter)",
-    url: "https://x.com/noorcode",
+    url: "https://x.com/CodingGamer4",
     color: "#6e3ece",
     icon: (
       <svg
@@ -191,7 +191,7 @@ const Contact: React.FC = () => {
                 </div>
               </motion.div>
 
-              <motion.div variants={itemVariants} className="mb-24">
+              <motion.div variants={itemVariants} className="mb-24 z-10 relative">
                 <p className="mb-6 text-center text-[10px] uppercase tracking-[0.16em] text-zinc-500">
                   FOLLOW ME
                 </p>
