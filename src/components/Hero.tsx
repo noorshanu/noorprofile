@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
             <motion.a
-              href="https://cat-cost.vercel.app/"
+              href="https://game.nooralam.pro/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -2, boxShadow: "0 0 22px rgba(110,62,206,0.75)" }}
