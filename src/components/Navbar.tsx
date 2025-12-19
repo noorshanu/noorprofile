@@ -9,7 +9,8 @@ const NAV_ITEMS = [
   { label: "Skills", href: "#skills" },
   { label: "Work", href: "#work" },
   { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Hire Me", href: "#hire" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 const Navbar: React.FC = () => {

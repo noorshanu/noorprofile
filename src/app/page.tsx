@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TechMarquee from "@/components/TechMarquee";
+import HowIThink from "@/components/HowIThink";
 import Skills from "@/components/Skills";
 import Timeline from "@/components/Timeline";
 import Projects from "@/components/Projects";
+import HireMe from "@/components/HireMe";
 import Contact from "@/components/Contact";
 import FloatingTelegram from "@/components/FloatingTelegram";
 
@@ -66,9 +68,11 @@ export default function Home() {
             <TechMarquee />
           </div>
         </section>
+        <HowIThink />
         <Skills />
         <Timeline />
         <Projects />
+        <HireMe />
         <Contact />
         <FloatingTelegram />
       </main>

@@ -55,11 +55,83 @@ const Hero: React.FC = () => {
             BUILDING SCALABLE, PRODUCTION‑GRADE SYSTEMS
           </p>
 
-          <p className="mb-8 max-w-md text-base leading-relaxed text-zinc-300 ">
+          <p className="mb-6 max-w-md text-base leading-relaxed text-zinc-300 ">
             Full‑stack engineer with 6+ years shipping high‑impact products across
             modern SaaS, DeFi, and AI. I design clean architectures, robust APIs,
             and crisp, fast UIs that feel like premium game menus.
           </p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+            whileHover={{ scale: 1.02, y: -2 }}
+            className="mb-8"
+          >
+            <div className="group relative overflow-hidden rounded-[8px] border-2 border-[#6e3ece]/50 bg-gradient-to-br from-[#6e3ece]/10 via-[#6e3ece]/5 to-transparent px-6 py-5 backdrop-blur-sm transition-all duration-300 hover:border-[#6e3ece] hover:bg-gradient-to-br hover:from-[#6e3ece]/15 hover:via-[#6e3ece]/10 hover:to-transparent hover:shadow-[0_0_28px_rgba(110,62,206,0.7)]">
+              {/* Animated corner accents */}
+              <motion.div
+                className="absolute -left-1 -top-1 h-3 w-3"
+                animate={{
+                  opacity: [0.4, 0.8, 0.4],
+                  scale: [1, 1.2, 1],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                <div className="h-2 w-2 rounded-full bg-[#6e3ece] opacity-60 blur-sm" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#6e3ece]" />
+                </div>
+              </motion.div>
+              <motion.div
+                className="absolute -right-1 -bottom-1 h-3 w-3"
+                animate={{
+                  opacity: [0.4, 0.8, 0.4],
+                  scale: [1, 1.2, 1],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
+              >
+                <div className="h-2 w-2 rounded-full bg-[#6e3ece] opacity-60 blur-sm" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="h-1.5 w-1.5 rounded-full bg-[#6e3ece]" />
+                </div>
+              </motion.div>
+
+              {/* Subtle background pattern */}
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(110,62,206,0.1)_1px,transparent_0)] bg-size-[8px_8px] opacity-30" />
+
+              <p className="relative text-center text-base font-semibold leading-relaxed text-white sm:text-lg lg:text-left">
+                I help startups turn ideas into{" "}
+                <motion.span
+                  className="inline-block text-[#6e3ece] font-['Press_Start_2P',system-ui,monospace]  text-[14px]"
+                  animate={{
+                    textShadow: [
+                      "0 0 8px rgba(110,62,206,0.5)",
+                      "0 0 12px rgba(110,62,206,0.8)",
+                      "0 0 8px rgba(110,62,206,0.5)",
+                    ],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                >
+                  fast, scalable Web3 & SaaS products
+                </motion.span>{" "}
+                <span className="">without overengineering.</span>
+              </p>
+            </div>
+          </motion.div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
             <motion.a
