@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TechMarquee from "@/components/TechMarquee";
+import ScrollProgress from "@/components/ScrollProgress";
 import HowIThink from "@/components/HowIThink";
 import Skills from "@/components/Skills";
 import Timeline from "@/components/Timeline";
@@ -61,6 +62,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <main className="min-h-screen text-white">
+        <ScrollProgress />
         <Navbar />
         <Hero />
         <section>
