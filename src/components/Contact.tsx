@@ -163,8 +163,8 @@ const Contact: React.FC = () => {
           animate={isInView ? "visible" : "hidden"}
           className="relative"
         >
-          <div className="relative overflow-hidden  p-8 ">
-            <div className="relative z-10">
+          <div className="relative overflow-hidden  p-8 z-40 ">
+            <div className="relative z-40">
               <motion.div variants={itemVariants} className="mb-8 text-center">
                 <h3 className="mb-4 font-['Press_Start_2P',system-ui,monospace] text-[16px] uppercase tracking-[0.18em] text-white sm:text-[18px]">
                   GET IN TOUCH
@@ -190,7 +190,7 @@ const Contact: React.FC = () => {
                     noor.alam.619@gmail.com
                   </a>
                 </div>
-                <div className="mt-4 flex justify-center">
+                <div className="mt-4 flex justify-center relative z-40">
                   <Link href="/contact-us">
                     <motion.div
                       variants={itemVariants}
@@ -252,7 +252,7 @@ const Contact: React.FC = () => {
 
               <motion.div
                 variants={itemVariants}
-                className="flex justify-center absolute top-[-30px] left-0"
+                className="flex justify-center absolute top-[-30px] left-0 z-[-1]"
               >
                 <img
                   src="/assets/contact.png"
