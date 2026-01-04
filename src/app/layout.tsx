@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Noor Alam",
   },
   description:
-    "Full-stack engineer with 6+ years of experience building scalable, production-grade systems. Specializing in React, Next.js, Node.js, Web3, Solidity, and AI integration. Based in Dubai, UAE.",
+    "Full-stack engineer with 6+ years of experience building scalable, production-grade systems. Specializing in React, Next.js, Node.js, Web3, Solidity, and AI integration. Available for freelance projects, startup MVPs, and Web3 audits. Based in Dubai, UAE.",
   keywords: [
     "Noor Alam",
     "Full Stack Developer",
@@ -24,10 +24,17 @@ export const metadata: Metadata = {
     "DeFi Developer",
     "Smart Contracts",
     "Dubai Developer",
+    "UAE Developer",
     "Portfolio",
     "Software Engineer",
     "Frontend Developer",
     "Backend Developer",
+    "Freelance Developer",
+    "Startup MVP Developer",
+    "Web3 Audit",
+    "Smart Contract Audit",
+    "Hire Developer",
+    "Remote Developer",
   ],
   authors: [{ name: "Noor Alam" }],
   creator: "Noor Alam",
@@ -47,6 +54,12 @@ export const metadata: Metadata = {
       "Full-stack engineer with 6+ years shipping high-impact products across modern SaaS, DeFi, and AI. Building scalable, production-grade systems.",
     images: [
       {
+        url: "/hireme.png",
+        width: 1200,
+        height: 630,
+        alt: "Noor Alam - Full Stack, Web3 & AI Engineer | Hire Me",
+      },
+      {
         url: "/fav.png",
         width: 1200,
         height: 630,
@@ -60,7 +73,7 @@ export const metadata: Metadata = {
     description:
       "Full-stack engineer with 6+ years shipping high-impact products across modern SaaS, DeFi, and AI.",
     creator: "@CodingGamer4",
-    images: ["/fav.png"],
+    images: ["/hireme.png"],
   },
   robots: {
     index: true,
@@ -76,8 +89,15 @@ export const metadata: Metadata = {
   icons: {
     icon: "/fav.png",
     shortcut: "/fav.png",
-    apple: "/fav.png",
+    apple: "/hireme.png",
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Noor Alam Portfolio",
+  },
+  category: "technology",
+  classification: "Portfolio Website",
   alternates: {
     canonical: "https://www.nooralam.pro",
   },

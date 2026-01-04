@@ -3,6 +3,7 @@
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 
 interface SocialLink {
@@ -188,6 +189,38 @@ const Contact: React.FC = () => {
                   >
                     noor.alam.619@gmail.com
                   </a>
+                </div>
+                <div className="mt-4 flex justify-center">
+                  <Link href="/contact-us">
+                    <motion.div
+                      variants={itemVariants}
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="group relative flex items-center gap-2 rounded-[6px] border-2 border-[#6e3ece] bg-[#6e3ece]/20 px-6 py-3 text-xs font-medium uppercase tracking-[0.18em] text-white transition-all duration-300 hover:bg-[#6e3ece]/30 hover:shadow-[0_0_20px_rgba(110,62,206,0.6)] font-['Press_Start_2P',system-ui,monospace]"
+                    >
+                      <span>CONTACT ME</span>
+                      <motion.svg
+                        className="h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        animate={{ x: [0, 4, 0] }}
+                        transition={{
+                          duration: 1.5,
+                          repeat: Infinity,
+                          ease: "easeInOut",
+                        }}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </motion.svg>
+                      <div className="absolute -right-1 -top-1 h-3 w-3 rounded-full border-2 border-[#6e3ece] bg-[#6e3ece]/20 opacity-0 transition-opacity group-hover:opacity-100" />
+                    </motion.div>
+                  </Link>
                 </div>
               </motion.div>
 

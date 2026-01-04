@@ -16,9 +16,9 @@ const structuredData = {
   name: "Noor Alam",
   jobTitle: "Full Stack, Web3 & AI Engineer",
   description:
-    "Full-stack engineer with 6+ years shipping high-impact products across modern SaaS, DeFi, and AI. Building scalable, production-grade systems.",
+    "Full-stack engineer with 6+ years shipping high-impact products across modern SaaS, DeFi, and AI. Building scalable, production-grade systems. Available for freelance projects, startup MVPs, and Web3 audits.",
   url: "https://www.nooralam.pro",
-  image: "https://www.nooralam.pro/fav.png",
+  image: "https://www.nooralam.pro/hireme.png",
   sameAs: [
     "https://github.com/noorshanu",
     "https://www.linkedin.com/in/noor-alam-aa722314b/",
@@ -29,6 +29,7 @@ const structuredData = {
   address: {
     "@type": "PostalAddress",
     addressLocality: "Dubai",
+    addressRegion: "Dubai",
     addressCountry: "United Arab Emirates",
   },
   knowsAbout: [
@@ -43,6 +44,8 @@ const structuredData = {
     "Solidity",
     "AI Integration",
     "DeFi",
+    "Smart Contract Audits",
+    "Startup MVPs",
   ],
   alumniOf: {
     "@type": "Organization",
@@ -51,6 +54,14 @@ const structuredData = {
   worksFor: {
     "@type": "Organization",
     name: "DeeLance",
+  },
+  offers: {
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: "Full Stack Development Services",
+      description: "Freelance development, startup MVPs, Web3 audits, and smart contract development",
+    },
   },
 };
 
